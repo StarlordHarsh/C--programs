@@ -1,0 +1,62 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp2
+{
+    class Program
+    {
+        public static void Main(string[] args)
+        {
+            string s = "Yash Saxena";
+            string s1 = "Harsh Jaiswal";
+            string s2 = "Ramu kaka";
+            string s3;
+            char g = 'y';
+            char k = 'h';
+            Console.WriteLine(k.CompareTo(g));
+            int n;
+            n = s1.CompareTo(s);
+            int h;
+            h = String.Compare(s, s1);
+            Console.WriteLine(h);   
+
+            Console.WriteLine(n);
+            n = s.Length;
+            Console.WriteLine(n);
+            char v = 'A';
+            Console.WriteLine((int)v);
+            Console.WriteLine(String.Concat(s1, s2));
+           // s3 = String.Copy(s1);
+            s3 = s1;
+            Console.WriteLine(s3);
+            string str="GeeksForGeeks";
+            char[] cpy = new char[15];
+            str.CopyTo(5, cpy, 1, 4);
+            Console.WriteLine(cpy);
+            if(s1.EndsWith("l"))
+            {
+                Console.WriteLine("HA");
+            }
+            if(s1.StartsWith("H"))
+            {
+                Console.WriteLine("Ha..");
+            }
+            if(String.Equals(s1,s1))
+            {
+                Console.WriteLine("Yes");
+            }
+            Console.WriteLine(String.Equals(s1, s1));
+            Console.WriteLine(s1.IndexOf('H'));
+            Console.WriteLine("s1:"+s1.Insert(5,"K"));
+            Console.WriteLine(s1.LastIndexOf("h"));
+            Console.ReadKey();
+        }
+
+        
+
+
+    }
+}
