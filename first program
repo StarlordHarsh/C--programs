@@ -1,0 +1,25 @@
+using System;
+//using print = Console.WriteLine;
+namespace ConsoleApp1
+{
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int[] ar = new int[5];
+            int i;
+            Console.WriteLine("Enter the array values:");
+            for(i=0;i<ar.Length;i++)
+            {
+                ar[i] = Convert.ToInt32(Console.ReadLine());
+            }
+            Console.WriteLine("Printing the array in reverse form:");
+            for(i=ar.Length-1;i>=0;i--)
+            {
+                Console.WriteLine(ar[i]);
+            }
+            Console.ReadKey();
+        }
+    }
+}
