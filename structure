@@ -1,0 +1,26 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp2
+{
+    struct name
+    {
+        public string Name;
+        public int no;
+    };
+    class Program
+    {
+        public static void Main(string[] args)
+        {
+            name n;
+            n.Name = "Goli";
+            n.no = 1;
+            Console.WriteLine(n.Name);
+            Console.WriteLine(n.no);
+            Console.ReadKey();
+        }
+    }
+}
